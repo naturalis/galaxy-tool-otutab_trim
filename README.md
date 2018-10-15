@@ -21,8 +21,8 @@ sudo git clone https://github.com/naturalis/galaxy-tool-otutab_trim-min-freq
 sudo chmod 777 galaxy-tool-otutab_trim-min-freq/*
 ```
 ```
-sudo ln -s /home/galaxy/Tools/galaxy-tool-alpha/otutab_trim_min_freq.sh /home/galaxy/galaxy/tools/identify/otutab_trim_min_freq.sh
-sudo ln -s /home/galaxy/Tools/galaxy-tool-alpha/otutab_trim_min_freq.xml /home/galaxy/galaxy/tools/identify/otutab_trim_min_freq.xml
+sudo ln -s /home/galaxy/Tools/galaxy-tool-otutab_trim-min-freq/otutab_trim_min_freq.sh /home/galaxy/galaxy/tools/identify/otutab_trim_min_freq.sh
+sudo ln -s /home/galaxy/Tools/galaxy-tool-otutab_trim-min-freq/otutab_trim_min_freq.xml /home/galaxy/galaxy/tools/identify/otutab_trim_min_freq.xml
 ```
 Add the following line to /home/galaxy/galaxy/config/tool_conf.xml
 ```
