@@ -1,4 +1,4 @@
-# galaxy-tool-otutab_trim-min-freq
+# galaxy-tool-otutab_trim
 ## Getting Started
 ### Prerequisites
 
