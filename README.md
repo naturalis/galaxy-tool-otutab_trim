@@ -29,3 +29,4 @@ Add the following line to /home/galaxy/galaxy/config/tool_conf.xml
 <tool file="identify/otutab_trim.xml" />
 ```
 ## Source
+https://www.drive5.com/usearch/manual/cmd_otutab_trim.html
