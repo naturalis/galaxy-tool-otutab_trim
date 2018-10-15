@@ -1,0 +1,20 @@
+<tool id="otutabtrim_minfreq" name="Trim otutable minimal freq">
+<description>Counts smaller then freq are set to 0</description>
+<command interpreter="bash">otutab_trim_min_freq.sh $input $freq $output $log</command>
+<inputs>
+<param format=".txt" name="input" type="data" label="otu table"/>
+    <param name="freq" type="float" label="Minimal frequency (0.0005 = 0.05%)"  value="0.0005" min="0.00005" max="1"/>
+</inputs>
+<outputs>
+    <data format="tabular" type="data" name="output" label="$input.display_name otutable freq filtered"/>
+    <data format="txt" type="data" name="log" label="$input.display_name otutable freq filtered log"/>
+</outputs>
+<tests>
+<test>
+<param name="test_input" value="test_input.txt"/>
+<output name="test_outout" file="test_output.txt"/>
+</test>
+</tests>
+<help>
+</help>
+</tool>
