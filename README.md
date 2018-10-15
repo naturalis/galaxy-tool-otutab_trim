@@ -22,10 +22,10 @@ sudo chmod 777 galaxy-tool-otutab_trim/*
 ```
 ```
 sudo ln -s /home/galaxy/Tools/galaxy-tool-otutab_trim/otutab_trim.sh /home/galaxy/galaxy/tools/identify/otutab_trim.sh
-sudo ln -s /home/galaxy/Tools/galaxy-tool-otutab_trim-min/otutab_trim_min.xml /home/galaxy/galaxy/tools/identify/otutab_trim.xml
+sudo ln -s /home/galaxy/Tools/galaxy-tool-otutab_trim-min/otutab_trim.xml /home/galaxy/galaxy/tools/identify/otutab_trim.xml
 ```
 Add the following line to /home/galaxy/galaxy/config/tool_conf.xml
 ```
-<tool file="identify/otutab_trim_min.xml" />
+<tool file="identify/otutab_trim.xml" />
 ```
 ## Source
