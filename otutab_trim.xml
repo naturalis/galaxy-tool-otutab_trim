@@ -1,9 +1,13 @@
-<tool id="otutabtrim_minfreq" name="Trim otutable minimal freq">
-<description>Counts smaller then freq are set to 0</description>
-<command interpreter="bash">otutab_trim_min_freq.sh $input $freq $output $log</command>
+<tool id="otutabtrim_minfreq" name="Trim otutable">
+<description></description>
+<command interpreter="bash">otutab_trim.sh $input $min_sample_size $min_count $min_freq $min_otu_size $min_otu_freq $output $log</command>
 <inputs>
-<param format=".txt" name="input" type="data" label="otu table"/>
-    <param name="freq" type="float" label="Minimal frequency (0.0005 = 0.05%)"  value="0.0005" min="0.00005" max="1"/>
+    <param format=".txt" name="input" type="data" label="otu table"/>
+	<param name="min_sample_size" type="integer" label="Minimal sample size"  value="0" min="0" max="1000"/>
+	<param name="min_count" type="integer" label="Minimum count"  value="0" min="0" max="10000"/>
+	<param name="min_freq" type="float" label="Minimum frequency (0.0005 = 0.05%)"  value="0" min="0" max="1"/>
+    <param name="min_otu_size" type="integer" label="Minimum total size for an OTU"  value="0" min="0" max="1000"/>
+	<param name="min_otu_freq" type="float" label="Minimum size for an OTU as a fraction of all OTUs (0.0005 = 0.05%)"  value="0" min="0" max="1"/>
 </inputs>
 <outputs>
     <data format="tabular" type="data" name="output" label="$input.display_name otutable freq filtered"/>
@@ -16,5 +20,19 @@
 </test>
 </tests>
 <help>
+-Minimal sample size
+   Default 0. Samples with total count less than this are deleted.
+
+-Minimum count
+  Default 0. Minimum count. Counts less than this are set to zero.
+
+-Minimum frequency
+  Default 0.0. Minimum frequency, defined as count divided by total sample size. Counts smaller than this are set to zero.
+
+-Minimum total size for an OTU
+  Default 0. Minimum total size for an OTU. OTUs smaller than this are deleted.
+
+-mMinimum size for an OTU as a fraction of all OTUs
+  Default 0.0. Minimum size for an OTU as a fraction of all OTUs. OTUs smaller than this are deleted.
 </help>
 </tool>
