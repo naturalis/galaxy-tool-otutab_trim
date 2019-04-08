@@ -1,6 +1,17 @@
 <tool id="otutabtrim_minfreq" name="Trim otutable">
 <description></description>
-<command interpreter="bash">otutab_trim.sh $input $min_sample_size $min_count $min_freq $min_otu_size $min_otu_freq $output $log</command>
+<command>
+<![CDATA[
+bash otutab_trim.sh 
+$input 
+$min_sample_size 
+$min_count $min_freq 
+$min_otu_size 
+$min_otu_freq 
+$output 
+$log
+]]>
+</command>
 <inputs>
     <param format=".txt" name="input" type="data" label="otu table"/>
 	<param name="min_sample_size" type="integer" label="Minimal sample size"  value="0" min="0" max="1000"/>
@@ -20,6 +31,7 @@
 </test>
 </tests>
 <help>
+<![CDATA[
 -Minimal sample size
    Default 0. Samples with total count less than this are deleted.
 
@@ -34,5 +46,6 @@
 
 -mMinimum size for an OTU as a fraction of all OTUs
   Default 0.0. Minimum size for an OTU as a fraction of all OTUs. OTUs smaller than this are deleted.
-</help>
+]]>
+  </help>
 </tool>
