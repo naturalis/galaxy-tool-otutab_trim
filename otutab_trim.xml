@@ -2,7 +2,7 @@
 <description></description>
 <command>
 <![CDATA[
-bash otutab_trim.sh 
+bash '$__tool_directory__/otutab_trim.sh' 
 $input 
 $min_sample_size 
 $min_count $min_freq 
@@ -13,7 +13,7 @@ $log
 ]]>
 </command>
 <inputs>
-    <param format=".txt" name="input" type="data" label="otu table"/>
+    <param format="txt" name="input" type="data" label="otu table"/>
 	<param name="min_sample_size" type="integer" label="Minimal sample size"  value="0" min="0" max="1000"/>
 	<param name="min_count" type="integer" label="Minimum count"  value="0" min="0" max="10000"/>
 	<param name="min_freq" type="float" label="Minimum frequency (0.0005 = 0.05%)"  value="0" min="0" max="1"/>
