@@ -48,4 +48,7 @@ $log
   Default 0.0. Minimum size for an OTU as a fraction of all OTUs. OTUs smaller than this are deleted.
 ]]>
   </help>
+  <citations>
+     <citation type="doi"> 10.1093/bioinformatics/btq461</citation>
+  </citations>
 </tool>
