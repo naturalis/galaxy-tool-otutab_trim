@@ -2,7 +2,8 @@
 ## Getting Started
 ### Prerequisites
 
-**usearch**<br />
+**usearch**<br />  
+**Note:** proceed with [Installing](#Installing) if [make OTU table](https://github.com/naturalis/galaxy-tool-make-otu-table) has already been installed.
 ```
 mkdir /home/galaxy/Tools/usearch 
 cd /home/galaxy/Tools/usearch
