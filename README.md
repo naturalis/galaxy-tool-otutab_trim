@@ -3,7 +3,7 @@
 ### Prerequisites
 
 **USEARCH**<br />  
-**Note:** proceed with **Installing]** if [make OTU table](https://github.com/naturalis/galaxy-tool-make-otu-table) was priorly installed.  
+**Note:** proceed with **Installing** if [make OTU table](https://github.com/naturalis/galaxy-tool-make-otu-table) was priorly installed.  
 (user: **galaxy**) 
 ```
 mkdir /home/galaxy/Tools/usearch 
@@ -18,14 +18,11 @@ sudo ln -s /home/galaxy/Tools/usearch/usearch11 /usr/local/bin/usearch11
 ```
 ### Installing
 Installing the tool for use in Galaxy
+(user: **galaxy**) 
 ```
-cd /home/galaxy/Tools
-```
-```
-sudo git clone https://github.com/naturalis/galaxy-tool-otutab_trim
-```
-```
-sudo chmod 777 galaxy-tool-otutab_trim/*
+cd /home/galaxy/Tools  
+git clone https://github.com/naturalis/galaxy-tool-otutab_trim
+chmod 777 galaxy-tool-otutab_trim/*
 ```
 Add the following line to /home/galaxy/galaxy/config/tool_conf.xml
 ```
