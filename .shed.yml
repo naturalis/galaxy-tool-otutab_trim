@@ -1,0 +1,13 @@
+name: naturalis_trim_otu_table
+owner:  luka
+description: "Trim records from otu-table that don't meet set threshold values." 
+long_description: |
+  "Trim records from otu-table that don't meet set threshold values.".
+remote_repository_url: https://github.com/naturalis/galaxy-tool-otutab_trim.git
+homepage_url: https://github.com/naturalis/galaxy-tool-otutab_trim.git
+type: unrestricted
+categories:
+   - "Sequence Analysis"
+auto_tool_repositories:
+  name_template: naturalis_trim_otu_table
+  description_template: naturalis_trim_otu_table

@@ -1,4 +1,4 @@
-<tool id="otutabtrim_minfreq" name="Trim otutable">
+<tool id="otutabtrim_minfreq" name="Trim otutable" version="1.0">
 <description></description>
 <command>
 <![CDATA[
